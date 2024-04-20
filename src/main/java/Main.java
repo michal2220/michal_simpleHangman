@@ -1,15 +1,12 @@
-import java.util.ArrayList;
-
 public class Main {
 
 
     public static void main(String[] args) {
 
-        PrepareGame prepareGame = new PrepareGame();
-        GamePlayLoop gamePlayLoop = new GamePlayLoop(prepareGame);
+        GameBackbone gameBackbone = new GameBackbone();
+        GamePlayLoop gamePlayLoop = new GamePlayLoop(gameBackbone);
 
 
-        prepareGame.prepareGame();
         gamePlayLoop.gamePlay();
 
     }
