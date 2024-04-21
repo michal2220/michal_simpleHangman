@@ -32,4 +32,7 @@ public class GameBackbone {
         return word;
     }
 
+    public ArrayList<String> getList() {
+        return list;
+    }
 }
