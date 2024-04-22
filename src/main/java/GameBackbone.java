@@ -4,13 +4,12 @@ public class GameBackbone {
 
     private Input input = new Input();
     private ArrayList<String> list = new ArrayList<>();
-    private char[] charTable;
     String word;
 
-    public ArrayList wordInput() {
+    public ArrayList<String> wordInput() {
         System.out.println("Podaj slowo: ");
         word = input.getInput();
-        charTable = word.toCharArray();
+        char[] charTable = word.toCharArray();
 
         for (char ch : charTable) {
             list.add(Character.toString(ch));
@@ -30,9 +29,5 @@ public class GameBackbone {
 
     public String getWord() {
         return word;
-    }
-
-    public ArrayList<String> getList() {
-        return list;
     }
 }
